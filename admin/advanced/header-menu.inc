@@ -19,7 +19,6 @@
 	<div class="navbar">
 	    <a class="menuconfig" href="/admin/configure.php"><?php echo __( 'Configuration' );?></a>
 	    <a class="menubackup" href="/admin/config_backup.php"><?php echo __( 'Backup/Restore' );?></a>
-	    <a class="menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'ODS Update' );?></a>
 	    <a class="menuadmin" href="/admin/"><?php echo __( 'Admin' );?></a>
 	    <a class="menudashboard" href="/"><?php echo __( 'Dashboard' );?></a>
 	</div>
