@@ -236,7 +236,6 @@ $isNewZumInstall = isset($iniData[$section][$key]) && $iniData[$section][$key] =
 		  </div>
 		  <?php if ($_SERVER["PHP_SELF"] == "/admin/index.php") {
 		      echo ' <a class="menuconfig" href="/admin/configure.php">'.__( 'Configuration' ).'</a>';
-		      echo ' <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles">'.__( 'ODS Update' ).'</a>'."\n";
 		      echo ' <a class="menuadvanced noMob" href="/admin/advanced/">Advanced</a>'."\n";
 		      echo ' <a class="menupower" href="/admin/power.php">'.__( 'Power' ).'</a>'."\n";
 		      echo ' <a class="menusysinfo noMob" href="/admin/sysinfo.php">System Details</a>'."\n";
@@ -249,6 +248,10 @@ $isNewZumInstall = isset($iniData[$section][$key]) && $iniData[$section][$key] =
 		    	echo '<a class="menuhwinfo noMob" href="#">SysInfo</a>';
 		        echo '<a class="menusimple noMob" href="/simple/">Simple View</a>';
 		    	echo '<a class="menulive" href="/live/">Live Caller</a>';
+                echo ' <a class="menuupdate noMob" href="/update.php?action=updatehostsfiles">'.__( 'Aktualizace Dashboard' ).'</a>'."\n";
+		        echo ' <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles">'.__( 'Aktualizace volaček' ).'</a>'."\n";
+                echo ' <a class="menuupdate noMob" href="/config/changelog.php">'.__( 'Poslední změna' ).'</a>'."\n";
+                
 			// DV-Mega Cast menu item only
 			if (isDVmegaCast() == 1) {
 		    	    echo '<a class="menucastmemory noMob" href="/admin/cast/memory-list/">Cast Memory</a>';
