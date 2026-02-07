@@ -59,7 +59,6 @@ if ($_SERVER["PHP_SELF"] == "/admin/config_backup.php") {
 		    <p>
 			<div class="navbar">
 			    <a class="menuconfig" href="/admin/configure.php"><?php echo __( 'Configuration' );?></a>
-			    <a class="menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'ODS Update' );?></a>
 			    <a class="menupower" href="/admin/power.php"><?php echo __( 'Power' );?></a>
 			    <a class="menuadmin" href="/admin/"><?php echo __( 'Admin' );?></a>
 			    <a class="menudashboard" href="/"><?php echo __( 'Dashboard' );?></a>

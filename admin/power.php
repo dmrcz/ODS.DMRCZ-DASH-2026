@@ -105,7 +105,6 @@ if ($_SERVER["PHP_SELF"] == "/admin/power.php") {
             </div>
 			    <a class="menuconfig" href="/admin/configure.php"><?php echo __( 'Configuration' );?></a>
 			    <a class="menubackup noMob" href="/admin/config_backup.php"><?php echo __( 'Backup/Restore' );?></a>
-			    <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'ODS Update' );?></a>
 			    <a class="menuadmin noMob" href="/admin/"><?php echo __( 'Admin' );?></a>
 			    <a class="menudashboard" href="/"><?php echo __( 'Dashboard' );?></a>
 			</div>
