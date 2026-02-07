@@ -1,0 +1,32 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/config/config.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/mmdvmhost/tools.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/mmdvmhost/functions.php'; ?>
+<div class="header">
+    <div class="SmallHeader shLeft">Hostname: <?php echo exec('cat /etc/hostname'); ?></div>
+    <div class="SmallHeader shRight">
+       <div id="CheckUpdate">
+       <?php
+          include $_SERVER['DOCUMENT_ROOT'].'/includes/checkupdates.php';
+       ?>
+       </div><br />
+    </div>
+    <?php if ($_SERVER['REQUEST_URI'] === '/admin/appearance.php') { ?>
+    <h1>WPSD - Digital Voice Dashboard Appearance Settings</h1>
+    <?php } else { ?>
+    <h1>WPSD - Digital Voice Dashboard Advanced Area</h1>
+    <?php } ?>
+    <p>
+	<div class="navbar">
+	    <a class="menuconfig" href="/admin/configure.php"><?php echo __( 'Configuration' );?></a>
+	    <a class="menubackup" href="/admin/config_backup.php"><?php echo __( 'Backup/Restore' );?></a>
+	    <a class="menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'DMRCZ Update' );?></a>
+	    <a class="menuadmin" href="/admin/"><?php echo __( 'Admin' );?></a>
+	    <a class="menudashboard" href="/"><?php echo __( 'Dashboard' );?></a>
+	</div>
+    <?php if (!($_SERVER['REQUEST_URI'] === '/admin/appearance.php')) { ?>
+	<div class="lnavbar">
+            <ul class="mainnav">
+			</div>
+    <?php } ?>
+    </p>
+</div>
