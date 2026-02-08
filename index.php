@@ -248,8 +248,7 @@ $isNewZumInstall = isset($iniData[$section][$key]) && $iniData[$section][$key] =
 		    	echo '<a class="menuhwinfo noMob" href="#">SysInfo</a>';
 		        echo '<a class="menusimple noMob" href="/simple/">Simple View</a>';
 		    	echo '<a class="menulive" href="/live/">Live Caller</a>';
-                echo ' <a class="menuupdate noMob" href="/update.php?action=updatehostsfiles">'.__( 'Aktualizace Dashboard' ).'</a>'."\n";
-		        echo ' <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles">'.__( 'Aktualizace volaček' ).'</a>'."\n";
+		        echo ' <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles">'.__( 'Aktualizace ODS.DMRCZ' ).'</a>'."\n";
                 echo ' <a class="menuupdate noMob" href="/config/changelog.php">'.__( 'Poslední změna' ).'</a>'."\n";
                 
 			// DV-Mega Cast menu item only
